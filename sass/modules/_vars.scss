@@ -1,3 +1,16 @@
-.hidden {
-    display: none;
+.hidden{display:none}
+
+@font-face {
+    font-family: Jalliestha;
+    src: url("morris_meganFIP2020/fonts/Jalliestha.ttf") format("truetype");
+  }
+
+  a:link, a:visited 
+{ 
+ 	text-decoration:none; 	
+}
+
+a:hover, a:active 
+{ 
+	text-decoration:none; 
 }
