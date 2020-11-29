@@ -1,0 +1,36 @@
+label { 
+    display: block;
+    margin: 1%;
+
+    padding-left: 2%;
+
+    &:first-of-type {
+        margin-top: 0;
+    }
+}
+
+input[type=text], input[type=email], textarea {
+    padding: 1%;
+    color: #333;
+    border-radius: 4px;
+    width: 250px;
+}
+
+textarea { resize: none; display: block; }
+
+
+
+.submit-wrapper {
+    display: inline-block;
+    margin-top: 2%;
+    padding: 1%;
+    border-radius: 0.5rem;
+    background-color: #c2a440;
+    cursor: pointer;
+    font-size:36px;
+    color: white;
+
+    &:hover { background-color: #5588c8}
+
+    span { padding-right: 0.5em; }
+}

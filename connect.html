@@ -42,7 +42,24 @@
         <img src="images/datsun.JPG" alt="Illustration of a Datsun" width="100">
         <div>
         <form>
-            <!--contact form here-->
+            <form action="/includes/mail/send.php" method="POST" id="mail-form">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" placeholder="first name" required>
+    
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" placeholder="last name" required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="email" required>
+                <label for="message">Your Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+    
+                <div class="submit-wrapper">
+                    <span class="submit">Submit</span>
+                    <i class="fas fa-paper-plane"></i>
+                </div>
+    
+            </form>
         </form></div>
         </section>
         <footer>

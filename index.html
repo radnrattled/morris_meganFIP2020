@@ -9,55 +9,73 @@
 <body>
     <main>
         <header>
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./services.html">Services</a></li>
-                <img src="images/mmlogo.svg" alt="Main logo" width="100">
+            <nav id="mainNav">
+                <div class="nav-wrapper">
+                <ul  class="nav"> 
+                <li><a href="https://www.instagram.com/megseroo" target="_blank">@megseroo</a></li>
+                <img class="header-logo" src="images/mmlogo.svg" alt="Main logo">
+            </li><a href="./index.html">Home</a></li>
                     <li><a href="./gallery.html">Gallery</a></li>
                     <li><a href="./connect.html">Connect</a></li>
                 </ul>
+            </div>
             </nav>
         </header>
         <section> <!--first section-->
             <h1 class="hidden">Home Page</h1>
-            <img src="images/megslogo.svg" alt="Megs Logo" width="100">
-            <img src="images/type.JPG" alt="Photo of a typewriter and plants" width="100">
-            <img src="images/portait1.JPG" alt="Photo of Designer" width="100">
-            <h2>Brand Designer | Illustrator | StoryTeller</h2>
+            <section class="row">
+            <div class="imageOne image"><img src="images/type.JPG" alt="Photo of a typewriter and plants" ></div>
+            <div class="imageTwo image"><img src="images/portait1.JPG" alt="Photo of Designer"></div>
+            <img class="sig" src="images/megslogo.svg" alt="Megs Logo">
+          
         </section>
-        <section><!--second section-->
+        <div class="designer">
+              <h2>Brand Designer | Illustrator | StoryTeller</h2>
+        </div>
+        </section>
+        <section class="section2"><!--second section-->
             <h2>Welcome</h2>
             <p>Tag line</p>
         </section>
-        <section><!--third section-->
-            <h2>Here's The Thing</h2>
+        <section class="section3"><!--third section-->
+            <div class="thething"><h2>Here's The Thing</h2>
             <p>Your Brand is more thank a logo. <br>
             Its's a story.<br>
         Don't hire just a designer,<br>
     hire a storyteller.</p>
-    <button>learn more</button>
-    <img src="images/hands.JPEG" alt="Hands covered in paint and glitter" width="100">
+    <button>learn more</button></div>
+    <img class="hands" src="images/hands.JPEG" alt="Hands covered in paint and glitter" >
         </section>
-        <section><!--sign up section-->
+        <section class="section4"><!--sign up section-->
             <h2>Sign up</h2>
-            <form><!--build sign up form here--></form>
+            <form action="/includes/mail/signup.php" method="POST" id="mail-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email" required>
+            <div class="submit-wrapper">
+                <span class="submit">Submit</span>
+                <i class="fas fa-paper-plane"></i>
+            </div>
+
+        </form>
         </section>
         <footer>
-            <img src="images/mmlogo.svg" alt="Megans Logo" width="100">
-            <img src="images/megslogo.svg" alt="Main logo" width="100">
-            <nav>
+            <div class="logofooter"><img src="images/mmlogo.svg" alt="Megans Logo" width="100"></div>
+            <div class="row footerspace"><img src="images/megslogo.svg" alt="Main logo" width="100">
+            <nav id="footerNav">
                 <ul>
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="./services.html">Services</a></li>
                     <li><a href="./gallery.html">Gallery</a></li>
                     <li><a href="./connect.html">Connect</a></li>
                 </ul>
             </nav>
-            <h2>Lets Get Social</h2>
-            <img src="images/insta.jpg" alt="Instagram Logo">
-            <img src="images/fb.jpg" alt="Facebook Logo">
-            <img src="footerarrow.jpg" alt="Pink arrow pointing at social icons">
+            <img src="images/insta.png" alt="Instagram Logo" width="70">
+            <img src="images/fb.png" alt="Facebook Logo"width="70">
+            <img src="images/footerarrow.png" alt="Pink arrow pointing at social icons"width="70">
+            <div class="socialfooter"><h2>Lets Get Social</h2>
+        </div>
+        </div>
             <p>Copyright</p>
         </footer>
     </main>

@@ -1,0 +1,63 @@
+
+
+#mainNav li {
+    display: inline;
+    padding: 5%;
+    font-family: 'Jalliestha';
+}
+
+#mainNav a {
+    text-decoration: none;
+}
+
+.header-logo {
+    width: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#mainNav ul li a {
+	color: #666;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+
+#mainNav ul li a:hover {
+color: #333;
+	padding: 5px;
+
+}
+
+
+#footerNav ul li a {
+	color: #666;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+
+#footerNav ul li a:hover {
+        color: #333;
+            padding: 5px;
+        
+        }
+
+#footerNav {
+    padding-left: 20%;
+}
+
+.logofooter {
+    margin: auto;
+    padding-left: 45%;
+}
+
+.footerspace {
+    padding: 5%;
+}
+
+.socialfooter {
+    padding-left: 20%;
+}
