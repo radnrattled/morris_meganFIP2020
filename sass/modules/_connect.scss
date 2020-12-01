@@ -1,4 +1,82 @@
-label { 
+.signup label { 
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+
+    padding-left: 8%;
+
+    &:first-of-type {
+        margin-top: 0;
+    }
+}
+
+.signup {
+    display: flex;
+    flex-direction: row;
+}
+
+.signup input[type=text], input[type=email], textarea {
+   
+    color: #333;
+    border-radius: 5px;
+    width: 250px;
+    height: 20px;
+}
+
+.signup textarea { resize: none; display: block; }
+
+
+
+.submit-wrapper {
+    display: inline-block;
+margin-left: 5%;
+    padding: 1%;
+    border-radius: 0.5rem;
+    background-color: #D67e4F;
+    cursor: pointer;
+    font-size:18px;
+    color: white;
+
+    &:hover { background-color: #fefaf0;
+        color:#808080;}
+
+    span { padding-right: 0.5em; }
+}
+
+.AMwrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutme {
+    background-color: #D67e4F;
+    width: 20%;
+    height: 300px;
+}
+
+.image2 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.portait {
+    width: 20%;
+}
+
+.quote {
+    padding-left: 35%;
+    background-color: #808080;
+    height: 150px;
+}
+.quote p{
+    padding-top: 5%;
+}
+.quote h2 {
+    padding-left: 20%;
+}
+
+.connect label { 
     display: block;
     margin: 1%;
 
@@ -9,28 +87,23 @@ label {
     }
 }
 
-input[type=text], input[type=email], textarea {
+.connect input[type=text], input[type=email], textarea {
     padding: 1%;
     color: #333;
     border-radius: 4px;
     width: 250px;
 }
 
-textarea { resize: none; display: block; }
+.connect textarea { resize: none; display: block; }
 
+.connect {
+    margin: 10%;
+}
+.connectform {
+    display: flex;
+    flex-direction: row;
+}
 
-
-.submit-wrapper {
-    display: inline-block;
-    margin-top: 2%;
-    padding: 1%;
-    border-radius: 0.5rem;
-    background-color: #c2a440;
-    cursor: pointer;
-    font-size:36px;
-    color: white;
-
-    &:hover { background-color: #5588c8}
-
-    span { padding-right: 0.5em; }
+.datsun {
+    width: 50%;
 }

@@ -30,6 +30,10 @@ color: #333;
 
 }
 
+#footerNav ul li{
+    list-style-type: none;
+    padding-top: 25%;
+}
 
 #footerNav ul li a {
 	color: #666;
@@ -55,9 +59,20 @@ color: #333;
 }
 
 .footerspace {
-    padding: 5%;
+padding-left: 2%;
 }
 
 .socialfooter {
-    padding-left: 20%;
+   display: flex;
+   flex-direction: row;
+ 
+}
+
+.footersocial {
+padding-left: 35%;
+}
+
+.footersocial img {
+    margin: auto;
+    
 }

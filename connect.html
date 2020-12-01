@@ -9,28 +9,31 @@
 <body>
     <main>
         <header>
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./services.html">Services</a></li>
-                <img src="images/mmlogo.svg" alt="Main logo" width="100">
+            <nav id="mainNav">
+                <div class="nav-wrapper">
+                <ul  class="nav"> 
+                <li><a href="https://www.instagram.com/megseroo" target="_blank">@megseroo</a></li>
+                <img class="header-logo" src="images/mmlogo.svg" alt="Main logo">
+                </li><a href="./index.html">Home</a></li>
                     <li><a href="./gallery.html">Gallery</a></li>
                     <li><a href="./connect.html">Connect</a></li>
                 </ul>
+            </div>
             </nav>
         </header>
         <section> <!--first section-->
             <h1 class="hidden">Connect Page</h1>
-            <div><h3>About Me</h3>
+            <div class="AMwrapper"><div class="aboutme image2"><h3>About Me</h3>
             <p>Write about me here</p></div>
-            <img src="images/portrait2.JPG" alt="photo of designer" width="100">
+            <img class="portait image2" src="images/portrait2.JPG" alt="photo of designer">
             <div>
                 <h2>Hey there I'm</h2>
                 <img src="images/megslogo.svg" alt="Main Logo" width="100">
                 <p>about me continued</p>
             </div>
+        </div>
         </section>
-        <section>
+        <section class="quote">
             <p>"An <span>intellectual</span> says a simple thing in a hard way.<br>
             An <span>artist</span> says a hard thing in a simple way."</p>
             <h2>Charles Bukowski</h2>
@@ -39,10 +42,11 @@
             <div>
             <h2>Let's connect</h2>
         </div>
-        <img src="images/datsun.JPG" alt="Illustration of a Datsun" width="100">
-        <div>
-        <form>
-            <form action="/includes/mail/send.php" method="POST" id="mail-form">
+        <div class="connectform" > 
+        <img class="datsun" src="images/datsun.JPG" alt="Illustration of a Datsun" >
+    
+       
+            <form class="connect" action="/includes/mail/send.php" method="POST" id="mail-form">
                 <label for="firstname">First Name</label>
                 <input type="text" id="firstname" name="firstname" placeholder="first name" required>
     
@@ -60,24 +64,25 @@
                 </div>
     
             </form>
-        </form></div>
+       </div>
         </section>
         <footer>
-            <img src="images/mmlogo.svg" alt="Main logo" width="100">
-            <img src="images/megslogo.svg" alt="Main logo" width="100">
-            <nav>
+            <div class="logofooter"><img src="images/mmlogo.svg" alt="Megans Logo" width="100"></div>
+            <div class="row footerspace"><img src="images/megslogo.svg" alt="Main logo" width="100">
+            <nav id="footerNav">
                 <ul>
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="./services.html">Services</a></li>
                     <li><a href="./gallery.html">Gallery</a></li>
                     <li><a href="./connect.html">Connect</a></li>
                 </ul>
             </nav>
-            <h2>Lets Get Social</h2>
-            <img src="images/insta.jpg" alt="Instagram Logo">
-            <img src="images/fb.jpg" alt="Facebook Logo">
-            <img src="footerarrow.jpg" alt="Pink arrow pointing at social icons">
-            <p>Copyright</p>
+            <div class="footersocial"><img src="images/insta.png" alt="Instagram Logo" width="70">
+            <img src="images/fb.png" alt="Facebook Logo"width="70">
+            <div class="socialfooter"><img src="images/footerarrow.png" alt="Pink arrow pointing at social icons"width="70">
+             <h2>Lets Get Social</h2></div>
+        </div>
+        </div>
+            <p>Copyright Megan Morris 2020</p>
         </footer>
     </main>
     <script type="module" src="js/main.js"></script>
