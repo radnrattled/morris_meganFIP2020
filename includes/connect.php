@@ -1,6 +1,6 @@
 <?php 
     $db_dsn = array( 
-        'host' => 'localhost',
+        'host' => 'localhost:3306',
         'dbname' => 'db_gallery',
         'charset' => 'utf8'
     );

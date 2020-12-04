@@ -5,14 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let's Connect</title>
     <link rel="stylesheet" href="css/master.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Raleway&display=swap');
+        </style>
 </head>
 <body>
     <main>
         <header>
+            <div class="insta"><h2><a href="https://www.instagram.com/megseroo" target="_blank">@megseroo</a></h2>
+            </div>
+                <div class="menu-wrapper">
+                <input type="checkbox" class="toggle" />
+                
+                <div class="hamburger">
+                  <div class="bar"></div>
+                </div>
+          
+            <div class="menu">
             <nav id="mainNav">
                 <div class="nav-wrapper">
                 <ul  class="nav"> 
-                <li><a href="https://www.instagram.com/megseroo" target="_blank">@megseroo</a></li>
                 <img class="header-logo" src="images/mmlogo.svg" alt="Main logo">
                 </li><a href="./index.html">Home</a></li>
                     <li><a href="./gallery.html">Gallery</a></li>
@@ -20,16 +32,19 @@
                 </ul>
             </div>
             </nav>
+        </div>
         </header>
         <section> <!--first section-->
             <h1 class="hidden">Connect Page</h1>
-            <div class="AMwrapper"><div class="aboutme image2"><h3>About Me</h3>
-            <p>Write about me here</p></div>
-            <img class="portait image2" src="images/portrait2.JPG" alt="photo of designer">
+            <div class="aboutme" >
+                <div class="AMwrapper">
+            <p>Megan is a passionate artist, designer and storyteller.<br><br> With a background in Fine Arts, Poetry and Psychology, she is able to create projects that are not only visually engaging <br><br>but itellectually stimulating <br><br>and tirelessly interesting.</p>
+        </div>
+            <img src="images/portrait2.JPG" alt="photo of designer">
             <div>
                 <h2>Hey there I'm</h2>
                 <img src="images/megslogo.svg" alt="Main Logo" width="100">
-                <p>about me continued</p>
+                <p>After graduating Western I took off to the west coast to write poetry in the mountains. After more adventure I joined a travelling circus and travelled all over North America for a year. It was during this time in my life I fell in love with places, people and making connections. It wasn't untill I went everywhere looking for something I couldn't define that I realized I would never find my home, I had to create it. Finding the Most beautiful places in the world is less about where you are, and more about who you are. </p>
             </div>
         </div>
         </section>
@@ -39,13 +54,13 @@
             <h2>Charles Bukowski</h2>
         </section>
         <section>
-            <div>
+            <div class="connectform" > 
+            <div class="letsconnect">
             <h2>Let's connect</h2>
-        </div>
-        <div class="connectform" > 
-        <img class="datsun" src="images/datsun.JPG" alt="Illustration of a Datsun" >
     
-       
+        <img class="datsun" src="images/datsun.JPG" alt="Illustration of a Datsun" >
+    </div>
+    
             <form class="connect" action="/includes/mail/send.php" method="POST" id="mail-form">
                 <label for="firstname">First Name</label>
                 <input type="text" id="firstname" name="firstname" placeholder="first name" required>

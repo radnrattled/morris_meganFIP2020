@@ -1,9 +1,11 @@
 .hidden{display:none}
 
-@font-face {
-    font-family: Jalliestha;
-    src: url("morris_meganFIP2020/fonts/Jalliestha.ttf") format("truetype");
-  }
+body {
+  font-family: 'Raleway', sans-serif;
+}
+button a {
+  text-decoration: none;
+}
 
   a:link, a:visited 
 { 
@@ -13,4 +15,16 @@
 a:hover, a:active 
 { 
 	text-decoration:none; 
+}
+
+.quote span{
+  font-family: 'Calligraffitti', cursive;
+  font-size: 36px;
+  padding: 1%;
+}
+
+.section2 span{
+  font-family: 'Calligraffitti', cursive;
+  font-size: 65px;
+  padding: 1%;
 }
