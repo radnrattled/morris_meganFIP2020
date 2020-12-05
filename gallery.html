@@ -4,15 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <link rel="stylesheet" href="css/master.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Raleway&display=swap');
+        </style>
 </head>
 <body>
     <main>
         <header>
+            <div class="insta"><h2><a href="https://www.instagram.com/megseroo" target="_blank">@megseroo</a></h2>
+            </div>
+                <div class="menu-wrapper">
+                <input type="checkbox" class="toggle" />
+                
+                <div class="hamburger">
+                  <div class="bar"></div>
+                </div>
+          
+            <div class="menu">
             <nav id="mainNav">
                 <div class="nav-wrapper">
                 <ul  class="nav"> 
-                <li><a href="https://www.instagram.com/megseroo" target="_blank">@megseroo</a></li>
                 <img class="header-logo" src="images/mmlogo.svg" alt="Main logo">
                 </li><a href="./index.html">Home</a></li>
                     <li><a href="./gallery.html">Gallery</a></li>
@@ -20,16 +33,24 @@
                 </ul>
             </div>
             </nav>
+        </div>
         </header>
-        <section> <!--first section-->
-            <h1 class="hidden">Services Page</h1>
-            <!--
-            gallery goes here
-            -->
-        </section>
-        <img src="images/couch.PNG" alt="gallery couch" width="100">
-
-       
+        <main id="app">
+            <ul>
+                <li v-for="photo in Gallery">
+                    <img class="port-image" :src=" 'images' + photo.avatar" alt="gallery Image">
+                    <a href="" class="remove-photo" @click.prevent="removePhoto(photo)" :class="{'photo-button-modifier' : removeAformat}"></a> <!-- :href="" -->
+                </li>
+            </ul>
+    
+            <section class="bio-data" :class="{'show-bio' : showBioData}">
+                <h1>{{ currentPhotoData.name }}</h1>
+                <p> {{ currentPhotoData.bio }}</p>
+            </section>
+            <section class="video">
+                <video class="demoreel" controls src="./images/demoreel2020.mp4"></video>
+            </section>
+        </main>
         <footer>
             <div class="logofooter"><img src="images/mmlogo.svg" alt="Megans Logo" width="100"></div>
             <div class="row footerspace"><img src="images/megslogo.svg" alt="Main logo" width="100">
