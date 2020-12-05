@@ -43,9 +43,7 @@ margin-left: 5%;
 }
 
 .AMwrapper {
-    display: flex;
-    flex-direction: row;
-        position: absolute;
+    position: absolute;
     top: 3%;
     left: 1%;
     background-color: #D67e4F;
@@ -66,7 +64,12 @@ margin-left: 5%;
     padding-left: 18%;
 }
 
-
+.quote span{
+    font-family: 'Calligraffitti', cursive;
+    font-size: 36px;
+    padding: 1%;
+  }
+  
 .quote {
     padding-left: 35%;
     background-image:linear-gradient(#808080,white);

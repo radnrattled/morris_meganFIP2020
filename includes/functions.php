@@ -2,7 +2,7 @@
     // include the file we just wrote - connect
     include("connect.php"); // like a JS import statement
 
-    $query = "SELECT * FROM tbl_gallery";
+    $query = "SELECT * FROM tb_gallery";
 
     $runQuery = $pdo->query($query);
 

@@ -1,6 +1,6 @@
 <?php 
     $db_dsn = array( 
-        'host' => 'localhost:3306',
+        'host' => 'localhost',
         'dbname' => 'db_gallery',
         'charset' => 'utf8'
     );
@@ -8,8 +8,8 @@
     $dsn = 'mysql:'.http_build_query($db_dsn, '', ';');
 
 
-    $db_user = 'Megseroo';
-    $db_pass = 'Redino15!';
+    $db_user = 'Root';
+    $db_pass = 'Root';
 
     try{
         $pdo = new PDO($dsn, $db_user, $db_pass);

@@ -38,8 +38,7 @@
         <main id="app">
             <ul>
                 <li v-for="photo in Gallery">
-                    <section class="gallery-section">
-                    </section>
+                    <img class="port-image" :src=" 'images' + photo.avatar" alt="gallery Image">
                     <a href="" class="remove-photo" @click.prevent="removePhoto(photo)" :class="{'photo-button-modifier' : removeAformat}"></a> <!-- :href="" -->
                 </li>
             </ul>
@@ -52,12 +51,6 @@
                 <video class="demoreel" controls src="./images/demoreel2020.mp4"></video>
             </section>
         </main>
-        <template id="gallery-template">
-            <div class="photo">
-                <h1 class="hidden"></h1>
-                <img src="temp.jpg" alt="portfolio image" >
-               
-        </template>
         <footer>
             <div class="logofooter"><img src="images/mmlogo.svg" alt="Megans Logo" width="100"></div>
             <div class="row footerspace"><img src="images/megslogo.svg" alt="Main logo" width="100">
