@@ -38,14 +38,15 @@
         <main id="app">
             <ul>
                 <li v-for="photo in Gallery">
-                    <img class="port-image" :src=" 'images' + photo.avatar" alt="gallery Image">
+                    <span class="bottleTitles button" data-offset="1"><img class="port-image" :src=" 'images' + photo.avatar" alt="gallery Image"></span>
                     <a href="" class="remove-photo" @click.prevent="removePhoto(photo)" :class="{'photo-button-modifier' : removeAformat}"></a> <!-- :href="" -->
                 </li>
             </ul>
     
-            <section class="bio-data" :class="{'show-bio' : showBioData}">
-                <h1>{{ currentPhotoData.name }}</h1>
-                <p> {{ currentPhotoData.bio }}</p>
+            <section class="bio-data lightbox" :class="{'show-bio' : showBioData}">
+                <div class="beer-info" ><h1>{{ currentPhotoData.name }}</h1>
+                <p> {{ currentPhotoData.bio }}</p></div>
+                <span class="close">X</span>
             </section>
             <section class="video">
                 <video class="demoreel" controls src="./images/demoreel2020.mp4"></video>

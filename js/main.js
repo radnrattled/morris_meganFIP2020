@@ -4,8 +4,7 @@ import { fetchData, postData } from "./components/dataMiner.js";
 (() => {
 
     let vue_vm = new Vue({
-        // link Vue to an element in our HTML
-        //el: "#app",
+    
 
         data: {
             removeAformat: true,
@@ -41,7 +40,26 @@ import { fetchData, postData } from "./components/dataMiner.js";
                 this.currentPhotoData = target;
             }
     }}).$mount("#app"); // also connects Vue to your wrapper in HTML
+
+let infoButtons = document.querySelectorAll(".button")
+  lightBox = document.querySelector(".lightbox")
+  closeLightbox = lightBox.querySelector(".close")
+  Desc = document.querySelector(".photo-info")
     
-    
+    function showLightbox() {
+        //pop open lightbox and show content
+        //debugger
+        lightBox.classList.add('show-lightbox');
+        Desc.textContent = `${currentPhotoData[this.dataset.offset][1]}`;
+      }
+      
+      function hideLightbox(){
+        lightBox.classList.remove('show-lightbox');
+      }
+      
+      
+      infoButtons.forEach(button => button.addEventListener("click", showLightbox));
+      closeLightbox.addEventListener("click", hideLightbox)
+      
     
 })();
